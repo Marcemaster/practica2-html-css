@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
 
+@font-face {
+    font-family: "netflix";
+    src: url(../fonts/Netflix-Sans-Medium.ttf);
+}
+
+:root {
+    --navbar-size: 50px;
+    --burger-width: 25px;
+    --navbar-padding: 5px;
+  }
+
+* {
+    font-family: netflix;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
 .logo {
     height: 40px;
     width: 80px;
@@ -16,5 +36,9 @@ img {
 
 hr {
     border:solid red;
+}
+
+section {
+    padding: 1rem 1rem;
 }
 

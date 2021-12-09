@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <title>Practica 2</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <title>Netflix</title>
 </head>
 <body>
     <nav class="navbar">
-        <input type="checkbox" id="burger-checkbox">
+        <input type="checkbox" id="burger-checkbox" />
         <label for="burger-checkbox" class="burger-label"></label>
         <div class="logo">
-            <a href="./index.html"><img src="./img/logo.jpg" alt="Logo netflix"></a>
+        <a href="./index.html"><img src="./img/logo.jpg" alt="Logo netflix"
+        /></a>
         </div>
         <ul class="navbar-list">
-            <li class="navbar-item"><a href="#novedades">Novedades</a></li>
-            <li class="navbar-item"><a href="#series">Series</a></li>
-            <li class="navbar-item"><a href="#peliculas">Películas</a></li>
-            <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
-            <li class="navbar-item"><a href="C:\Users\user\Desktop\practica2-html-css\login.html">Cerrar sesión</a></li>
+        <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+        <li class="navbar-item"><a href="#series">Series</a></li>
+        <li class="navbar-item"><a href="#peliculas">Películas</a></li>
+        <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+        <li class="navbar-item">
+          <a href="./login.html"
+            >Cerrar sesión</a
+          >
+        </li>
         </ul>
     </nav>
-    <main>
+    <header>
+      <!-- Aquí va a ir el video en bucle -->
+    </header>
+    <main class="contenedor">
+        <section class="novedades" id="novedades">
+            <h1 class="titulo-novedades">Novedades</h1>
+            <div class="novedad-item">
+                <img
+                    src="./img/casa-de-papel.jpg"
+                    alt="La casa de papel"
+                />
+                <div class="novedad-overlay">
+                    <div class="content">
+                        <p class="titulo">La casa de papel</p>
+                        <p class="clasificacion">+18</p>
+                        <p class="año">2021</p>
+                        <p class="sinopsis">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
+                        expedita cupiditate quisquam sunt doloribus enim
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="series" id="series">
+            <h1 class="titulo-series">series</h1>
+            <div class="series-item">
+                <img
+                    src="./img/rick.jpg"
+                    alt="Rick y Morty"
+                />
+                <div class="series-overlay">
+                    <div class="content">
+                        <p class="titulo">Rick y Morty</p>
+                        <p class="clasificacion">+18</p>
+                        <p class="año">2014</p>
+                        <p class="sinopsis">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
+                        expedita cupiditate quisquam sunt doloribus enim
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="peliculas" id="peliculas">
+            <h1 class="titulo-peliculas">peliculas</h1>
+            <div class="peliculas-item">
+                <img
+                    src="./img/anillos.jpg"
+                    alt="El señor de los anillos"
+                />
+                <div class="peliculas-overlay">
+                    <div class="content">
+                        <p class="titulo">El señor de los anillos</p>
+                        <p class="clasificacion">+13</p>
+                        <p class="año">2001</p>
+                        <p class="sinopsis">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
+                        expedita cupiditate quisquam sunt doloribus enim
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="favoritos" id="favoritos">
+            <h1 class="titulo-favoritos">Favoritos</h1>
+            <div class="favoritos-item">
+                <img
+                    src="./img/mr-robot.jpg"
+                    alt="Mr Robot"
+                />
+                <div class="peliculas-overlay">
+                    <div class="content">
+                        <p class="titulo">Mr Robot</p>
+                        <p class="clasificacion">+13</p>
+                        <p class="año">2012</p>
+                        <p class="sinopsis">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
+                        expedita cupiditate quisquam sunt doloribus enim
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <hr>
     <footer class="footer">
+        <hr/>
         <aside class="social">
-          <ul class="social-list">
-            <li><a href="" target="_blank" rel="noreferrer noopener">Facebook</a>
-            </li>
-            <li><a href="" target="_blank" rel="noreferrer noopener">Twitter</a>
-            </li>
-            <li><a href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="social-list">
+                <li>
+                    <a href="" target="_blank" rel="noreferrer noopener">Facebook</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" rel="noreferrer noopener">Twitter</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                </li>
+             </ul>
         </aside>
-        <p>
-            &#169;1997-2021 Netflix, Inc.
-
-        </p>
+        <p>&#169;1997-2021 Netflix, Inc.</p>
     </footer>
 </body>
-
-
 </html>
