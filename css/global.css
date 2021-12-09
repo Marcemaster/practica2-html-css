@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+
+.logo {
+    height: 40px;
+    width: 80px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+/* Esto es para separar el footer */
+
+hr {
+    border:solid red;
+}
+
