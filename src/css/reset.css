@@ -6,6 +6,8 @@
 *, *::after, *::before {
   font-family: netflix, roboto, Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+
+  padding: 0;
 }
 
 body {
