@@ -1,146 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/novedades.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="shortcut icon" href="./img/netflix-icon.ico" />
     <title>Netflix</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <input type="checkbox" id="burger-checkbox" />
-        <label for="burger-checkbox" class="burger-label"></label>
-        <div class="logo">
-        <a href="./index.html"><img src="./img/logo.jpg" alt="Logo netflix"
+      <input type="checkbox" id="burger-checkbox" />
+      <label for="burger-checkbox" class="burger-label"></label>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./img/logo.jpg" alt="Logo netflix"
         /></a>
         <div class="barra">
-            <input type="checkbox" id="busca-checkbox" />
-            <label for="busca-checkbox" class="busca-label"></label>
-            <input type="text" placeholder="Search.." class="buscador">
+          <input type="text" placeholder="Search.." class="buscador" />
         </div>
-        </div>
-        <ul class="navbar-list">
+      </div>
+      <ul class="navbar-list">
         <li class="navbar-item"><a href="#novedades">Novedades</a></li>
         <li class="navbar-item"><a href="#series">Series</a></li>
         <li class="navbar-item"><a href="#peliculas">Películas</a></li>
-        <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+        <li class="navbar-item"><a href="./404.html">Favoritos</a></li>
         <li class="navbar-item">
-          <a href="./login.html"
-            >Cerrar sesión</a
-          >
+          <a href="./login.html">Cerrar sesión</a>
         </li>
-        </ul>
+      </ul>
     </nav>
     <header class="header">
-        <div>
-            <video src="./video/yt1s.com - Green Book  Official Trailer HD.mp4" width=100% height=100% autoplay controls muted loop ></video>
-        </div>
+      <div>
+        <video
+          src="./video/yt1s.com - Green Book  Official Trailer HD.mp4"
+          width="100%"
+          height="100%"
+          autoplay
+          controls
+          muted
+          loop
+        ></video>
+      </div>
     </header>
     <main class="contenedor">
-        <section class="novedades" id="novedades">
-            <h1 class="titulo-novedades">Novedades</h1>
-            <div class="novedad-item">
-                <img
-                    src="./img/casa-de-papel.jpg"
-                    alt="La casa de papel"
-                />
-                <div class="novedad-overlay">
-                    <div class="content">
-                        <p class="titulo">La casa de papel</p>
-                        <p class="clasificacion">+18</p>
-                        <p class="año">2021</p>
-                        <p class="sinopsis">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
-                        expedita cupiditate quisquam sunt doloribus enim
-                        </p>
-                    </div>
-                </div>
+      <h1 id="novedades">Novedades</h1>
+      <section class="section">
+        <div class="section-item">
+          <img src="./img/casa-de-papel.jpg" alt="La casa de papel" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo">La casa de papel</p>
+              <p class="clasificacion">+18</p>
+              <p class="año">2021</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
             </div>
-        </section>
-        <section class="series" id="series">
-            <h1 class="titulo-series">series</h1>
-            <div class="series-item">
-                <img
-                    src="./img/rick.jpg"
-                    alt="Rick y Morty"
-                />
-                <div class="series-overlay">
-                    <div class="content">
-                        <p class="titulo">Rick y Morty</p>
-                        <p class="clasificacion">+18</p>
-                        <p class="año">2014</p>
-                        <p class="sinopsis">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
-                        expedita cupiditate quisquam sunt doloribus enim
-                        </p>
-                    </div>
-                </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav">
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+          </div>
+        </div>
+        <div class="section-item">
+            <img src="./img/spiderman.jpg" alt="Spiderman" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Spiderman Homecoming</p>
+                <p class="clasificacion">+7</p>
+                <p class="año">2019</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
             </div>
-        </section>
-        <section class="peliculas" id="peliculas">
-            <h1 class="titulo-peliculas">peliculas</h1>
-            <div class="peliculas-item">
-                <img
-                    src="./img/anillos.jpg"
-                    alt="El señor de los anillos"
-                />
-                <div class="peliculas-overlay">
-                    <div class="content">
-                        <p class="titulo">El señor de los anillos</p>
-                        <p class="clasificacion">+13</p>
-                        <p class="año">2001</p>
-                        <p class="sinopsis">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
-                        expedita cupiditate quisquam sunt doloribus enim
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="section-item">
+            <img src="./img/rick.jpg" alt="Rick y Morty" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Rick y Morty</p>
+                <p class="clasificacion">+18</p>
+                <p class="año">2016</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
             </div>
-        </section>
-        <section class="favoritos" id="favoritos">
-            <h1 class="titulo-favoritos">Favoritos</h1>
-            <div class="favoritos-item">
-                <img
-                    src="./img/mr-robot.jpg"
-                    alt="Mr Robot"
-                />
-                <div class="peliculas-overlay">
-                    <div class="content">
-                        <p class="titulo">Mr Robot</p>
-                        <p class="clasificacion">+13</p>
-                        <p class="año">2012</p>
-                        <p class="sinopsis">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam
-                        expedita cupiditate quisquam sunt doloribus enim
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="section-item">
+            <img src="./img/mr-robot.jpg" alt="Mr Robot" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Mr. Robot</p>
+                <p class="clasificacion">+13</p>
+                <p class="año">2014</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
             </div>
+          </div>
         </section>
-
+      <h1 id="series">Series</h1>
+      <section class="section">
+        <div class="section-item">
+          <img src="./img/madre.jpg" alt="Cómo conocí a vuestra madre" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo">Como conocí a vuestra madre</p>
+              <p class="clasificacion">+13</p>
+              <p class="año">2002</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
+            </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav">
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+          </div>
+        </div>
+        <div class="section-item">
+            <img src="./img/casa-de-papel.jpg" alt="La casa de papel" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">La casa de papel</p>
+                <p class="clasificacion">+18</p>
+                <p class="año">2021</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+            </div>
+          </div>
+          <div class="section-item">
+            <img src="./img/rick.jpg" alt="Rick y Morty" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Rick y Morty</p>
+                <p class="clasificacion">+18</p>
+                <p class="año">2016</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+            </div>
+          </div>
+          <div class="section-item">
+            <img src="./img/mr-robot.jpg" alt="Mr Robot" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Mr. Robot</p>
+                <p class="clasificacion">+13</p>
+                <p class="año">2014</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+            </div>
+          </div>
+        </section>
+      <h1 id="peliculas">Películas</h1>
+      <section class="section">
+        <div class="section-item">
+          <img src="./img/green-book.jpg" alt="Green Book" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo">Green Book</p>
+              <p class="clasificacion">+13</p>
+              <p class="año">2018</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
+            </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav">
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+          </div>
+        </div>
+        <div class="section-item">
+            <img src="./img/anillos.jpg" alt="El señor de los anillos" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">El señor de los anillos</p>
+                <p class="clasificacion">+13</p>
+                <p class="año">2001</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+            </div>
+          </div>
+          <div class="section-item">
+            <img src="./img/virgen.jpg" alt="Virgen a los 40" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Virgen a los 40</p>
+                <p class="clasificacion">+13</p>
+                <p class="año">2007</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+            </div>
+          </div>
+          <div class="section-item">
+            <img src="./img/scary.jpg" alt="Scary Movie" />
+            <div class="section-overlay">
+              <div class="content">
+                <p class="titulo">Scary Movie</p>
+                <p class="clasificacion">+18</p>
+                <p class="año">1999</p>
+                <p class="sinopsis">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  numquam expedita cupiditate quisquam sunt doloribus enim
+                </p>
+              </div>
+              <input type="checkbox" class="checkboxfav" id="checkfav">
+              <label for="checkfav" class="checkfav-label"></label>
+              <div class="fav"><img src="./img/no-fav.png" alt="no-fav"></div>
+              <div class="si-fav"><img src="./img/fav.png" alt="fav"></div>
+            </div>
+          </div>
+        </section>
     </main>
     <footer class="footer">
-        <hr/>
-        <aside class="social">
-            <ul class="social-list">
-                <li>
-                    <a href="" target="_blank" rel="noreferrer noopener">Facebook</a>
-                </li>
-                <li>
-                    <a href="" target="_blank" rel="noreferrer noopener">Twitter</a>
-                </li>
-                <li>
-                    <a href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-                </li>
-             </ul>
-        </aside>
-        <p>&#169;1997-2021 Netflix, Inc.</p>
+      <hr />
+      <aside class="social">
+        <ul class="social-list">
+          <li>
+            <a href="" target="_blank" rel="noreferrer noopener">Facebook</a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noreferrer noopener">Twitter</a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          </li>
+        </ul>
+      </aside>
+      <p>&#169;1997-2021 Netflix, Inc.</p>
     </footer>
-</body>
+  </body>
 </html>
