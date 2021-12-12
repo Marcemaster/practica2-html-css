@@ -8,9 +8,14 @@
 .footer p {
     font-size: .7rem;
     text-align: center;
+
 }
 
 footer a {
     font-size: .75rem;
     margin-left: 10%;
+}
+
+footer li {
+    margin: 10px;
 }

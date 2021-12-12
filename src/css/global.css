@@ -20,6 +20,16 @@ h1 {
     padding-left: 1rem;
 }
 
+p>a {
+    color: black;
+
+}
+
+div>p>a:hover {
+    font-weight: bold;
+    text-decoration: underline red;
+}
+
 body {
     background-color: black;
 }

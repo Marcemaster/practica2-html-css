@@ -1,25 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Esta pag es una plantilla para realizar los detalles de cada película.
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/ficha.css" />
+    <link rel="shortcut icon" href="./img/netflix-icon.ico" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <input type="checkbox" id="burger-checkbox" />
+      <label for="burger-checkbox" class="burger-label"></label>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./img/logo.jpg" alt="Logo netflix"
+        /></a>
+        <div class="barra">
+          <input type="text" placeholder="Search.." class="buscador" />
+        </div>
+      </div>
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="./index.html#novedades">Novedades</a>
+        </li>
+        <li class="navbar-item"><a href="./index.html#series">Series</a></li>
+        <li class="navbar-item">
+          <a href="./index.html#peliculas">Películas</a>
+        </li>
+        <li class="navbar-item"><a href="./404.html">Favoritos</a></li>
+        <li class="navbar-item">
+          <a href="./login.html">Cerrar sesión</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div>
+        <video
+          src="./video/yt1s.com - Green Book  Official Trailer HD.mp4"
+          width="100%"
+          height="100%"
+          autoplay
+          controls
+          muted
+          loop
+        ></video>
+      </div>
+    </header>
+    <main class="contenedor">
+      <h1 id="titulo">Green Book</h1>
+      <ul class="ficha-lista">
+        <li class="ficha-item"><span>Duración:</span> 130 min.</li>
+        <li class="ficha-item"><span>País:</span> Estados Unidos</li>
+        <li class="ficha-item"><span>Dirección:</span> Peter Farrelly</li>
+        <li class="ficha-item"><span>Guion:</span> Brian Hayes Currie, Peter Farrelly, Nick Vallelonga</li>
+        <li class="ficha-item">
+            <span>Sinopsis:</span> Año 1962. Tony Lip (Viggo Mortensen) es un rudo
+          italoamericano del Bronx que es contratado como chófer del virtuoso
+          pianista negro Don Shirley (Mahershala Ali). Ambos emprenderán un
+          viaje para una gira de conciertos por el Sur de Estados Unidos, donde
+          Tony deberá tener presente "El libro verde", una guía que indicaba los
+          pocos establecimientos donde se aceptaba a los afroamericanos. Son dos
+          personas que tendrán que hacer frente al racismo y los prejuicios,
+          pero a las que el destino unirá, obligándoles a dejar de lado las
+          diferencias para sobrevivir y prosperar en el viaje de sus vidas.
+          (FILMAFFINITY)
+        </li>
+      </ul>
 
-    Debe incluir:
-        a. El mismo menú superior de la pantalla principal
-
-        b. Información básica de la película/serie/episodio: título, calificación, año de
-        publicación, sinopsis completa y listado de actores.
-
-        c. Carátula o trailer. El trailer debe poder reproducirse en la propia página. En
-        caso de tratarse de un vídeo no se acepta la inclusión mediante marcos
-        iframe.
-
-        d. “Rejilla” con contenido relacionado, que se usará para los episodios en el
-        caso de una serie o para películas similares en el caso de las películas.
-</body>
+      <h1 id="recomendados">Recomendados</h1>
+      <section class="section">
+        <div class="section-item">
+          <img src="./img/casa-de-papel.jpg" alt="La casa de papel" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo"><a href="./ficha.html">La casa de papel</a></p>
+              <p class="clasificacion">+18</p>
+              <p class="año">2021</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
+            </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav" />
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav" /></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav" /></div>
+          </div>
+        </div>
+        <div class="section-item">
+          <img src="./img/spiderman.jpg" alt="Spiderman" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo">
+                <a href="./ficha.html">Spiderman Homecoming</a>
+              </p>
+              <p class="clasificacion">+7</p>
+              <p class="año">2019</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
+            </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav" />
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav" /></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav" /></div>
+          </div>
+        </div>
+        <div class="section-item">
+          <img src="./img/rick.jpg" alt="Rick y Morty" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo"><a href="./ficha.html">Rick y Morty</a></p>
+              <p class="clasificacion">+18</p>
+              <p class="año">2016</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
+            </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav" />
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav" /></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav" /></div>
+          </div>
+        </div>
+        <div class="section-item">
+          <img src="./img/mr-robot.jpg" alt="Mr Robot" />
+          <div class="section-overlay">
+            <div class="content">
+              <p class="titulo"><a href="./ficha.html">Mr. Robot</a></p>
+              <p class="clasificacion">+13</p>
+              <p class="año">2014</p>
+              <p class="sinopsis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                numquam expedita cupiditate quisquam sunt doloribus enim
+              </p>
+            </div>
+            <input type="checkbox" class="checkboxfav" id="checkfav" />
+            <label for="checkfav" class="checkfav-label"></label>
+            <div class="fav"><img src="./img/no-fav.png" alt="no-fav" /></div>
+            <div class="si-fav"><img src="./img/fav.png" alt="fav" /></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <hr />
+      <aside class="social">
+        <ul class="social-list">
+          <li>
+            <a href="" target="_blank" rel="noreferrer noopener">Facebook</a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noreferrer noopener">Twitter</a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          </li>
+        </ul>
+      </aside>
+      <p>&#169;1997-2021 Netflix, Inc.</p>
+    </footer>
+  </body>
 </html>

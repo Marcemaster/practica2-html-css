@@ -1,0 +1,21 @@
+.ficha-item {
+    display: bl;
+    align-items: center;
+    max-width: 80%;
+    padding-left: 5rem;
+    margin-bottom: 1rem;
+}
+
+#titulo {
+    text-align: center;
+}
+
+#recomendados {
+    padding-top: 3%;
+}
+
+
+
+li>span {
+    color: red;
+}

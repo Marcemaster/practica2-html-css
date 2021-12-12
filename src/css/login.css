@@ -8,12 +8,6 @@
     opacity: .8;
   }
 
-h1 {
-    position: relative;
-    top: 90px;
-    margin-left: 10px;
-}
-
 .contenedor {
     height: 70vh;
     display: grid;
@@ -52,12 +46,13 @@ p > a:hover {
 }
 
 .fondo-gris {
-    height: 30%;
-    width: 50%;
+    height: 50%;
+    width: 35%;
     position: absolute;
-    top: 35vh;
-    left: 25%;
+    top: 20vh;
+    left: 32%;
     background-color: black;
     z-index: -1;
     opacity: .8;
+    border-radius: 15px;
 }
